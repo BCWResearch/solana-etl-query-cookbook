@@ -1,3 +1,4 @@
+-- 35.21 GB when run
 SELECT
   *
 FROM

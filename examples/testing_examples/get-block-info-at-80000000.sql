@@ -1,3 +1,4 @@
+-- 16 TB when run
 WITH BlockInfo AS (
   SELECT
     slot,

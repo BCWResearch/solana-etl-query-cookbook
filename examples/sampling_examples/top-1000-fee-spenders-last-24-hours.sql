@@ -1,3 +1,4 @@
+-- 7.02 TB when run
 WITH
   GetTopFeeSpenders AS (
     SELECT
