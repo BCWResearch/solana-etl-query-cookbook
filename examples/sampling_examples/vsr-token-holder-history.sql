@@ -4,13 +4,13 @@ WITH
       tx_signature AS signature,
       update_authority
     FROM
-      `solana-bq.test_usa.Tokens`
+      `solana-data-sandbox.crypto_solana_mainnet_us.Tokens`
   )
 SELECT DISTINCT
   block_timestamp,
   ptb.owner AS holder,
 FROM
-  `solana-bq.test_usa.Transactions` AS Transactions
+  `solana-data-sandbox.crypto_solana_mainnet_us.Transactions` AS Transactions
   CROSS JOIN 
     UNNEST(post_token_balances) AS ptb
 LEFT JOIN 
