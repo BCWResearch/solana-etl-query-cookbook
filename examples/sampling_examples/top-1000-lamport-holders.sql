@@ -1,7 +1,8 @@
+-- 6.01 GB when run
 SELECT
-  *
+  pubkey, lamports
 FROM
-  testsolana_1.Accounts
+  crypto_solana_mainnet_us.Accounts
 ORDER BY
   lamports DESC
 LIMIT

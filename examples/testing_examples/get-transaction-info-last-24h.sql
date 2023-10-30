@@ -1,3 +1,4 @@
+-- 691.01 MB when run 
 SELECT
   (
     SELECT

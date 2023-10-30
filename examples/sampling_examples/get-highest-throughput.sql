@@ -1,3 +1,4 @@
+-- 423.12 GB when run
 SELECT
   'solana' AS chain,
   COUNT(*) / (24 * 60 * 60 / COUNT(*) OVER (PARTITION BY DATE(block_timestamp))) AS throughput,

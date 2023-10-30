@@ -1,3 +1,4 @@
+-- 211.52 GB when run
 WITH
   daily_transactions AS (
   SELECT
