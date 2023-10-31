@@ -4,7 +4,7 @@ SELECT
   COUNT(*) / (24 * 60 * 60 / COUNT(*) OVER (PARTITION BY DATE(block_timestamp))) AS throughput,
   block_timestamp AS time
 FROM
-  `testsolana_1.Transactions` AS transactions
+  `crypto_solana_mainnet_us.Transactions` AS transactions
 GROUP BY
   transactions.block_slot,
   transactions.block_timestamp

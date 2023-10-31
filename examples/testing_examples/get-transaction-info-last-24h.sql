@@ -4,7 +4,7 @@ SELECT
     SELECT
       COUNT(*)
     FROM
-      testsolana_1.Transactions
+      crypto_solana_mainnet_us.Transactions
     WHERE
       block_timestamp >= TIMESTAMP_SUB (CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)
       AND block_timestamp <= CURRENT_TIMESTAMP()
@@ -13,7 +13,7 @@ SELECT
     SELECT
       SUM(fee)
     FROM
-      testsolana_1.Transactions
+      crypto_solana_mainnet_us.Transactions
     WHERE
       block_timestamp >= TIMESTAMP_SUB (CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)
       AND block_timestamp <= CURRENT_TIMESTAMP()
@@ -22,7 +22,7 @@ SELECT
     SELECT
       AVG(fee)
     FROM
-      testsolana_1.Transactions
+      crypto_solana_mainnet_us.Transactions
     WHERE
       block_timestamp >= TIMESTAMP_SUB (CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)
       AND block_timestamp <= CURRENT_TIMESTAMP()

@@ -5,7 +5,7 @@ WITH
     DATE(block_timestamp) AS date,
     COUNT(*) AS count
   FROM
-    `testsolana_1.Transactions`
+    `crypto_solana_mainnet_us.Transactions`
   GROUP BY
     date )
 SELECT
